@@ -1,0 +1,16 @@
+{% extends 'Contact/home.html' %}
+{% block details %} 
+
+    <div class="">
+        <div class="col-sm-8">
+            <h4 class="alert alert-info">UPDATE CONTACT</h4>
+            <form action="" method="POST" class="ml-5 mt-5 p-3">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" class="btn btn-success mt-5" value="Update">
+                <a href="/allcontacts/" class="btn btn-info mt-5">BACK</a>
+            </form>
+        </div>
+    </div>
+
+{% endblock details %}
